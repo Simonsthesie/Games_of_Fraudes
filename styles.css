@@ -1,0 +1,158 @@
+* {
+    font-family: 'Julius Sans One';font-size: 22px;
+  }
+  
+  /*EXTEND*/
+  .flex-center, .stripe, .arrow .arrow__item, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*ELEMENTS*/
+  body {
+    background-image: url("Images/bg-piece.PNG");
+    background-repeat: no-repeat;
+  }
+  
+  nav {
+    position: absolute;
+    left: 48px;
+    top: 32px;
+  }
+  nav a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 40px 0 0;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .arrow {
+    display: flex;
+  }
+  .arrow .arrow__item {
+    color: #e15046;
+    border: 1px solid #e15046;
+    border-radius: 50%;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 16px 0 0;
+    padding: 3px 3px 1px;
+    height: 24px;
+    width: 24px;
+    display: block;
+    transition: 0.3s ease;
+  }
+  .arrow .arrow__item:hover {
+    color: #eb7d3e;
+    border: 1px solid #eb7d3e;
+    transform: scale(1.1);
+  }
+  
+  /*LP*/
+  .lp {
+    margin-top: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*TEXT*/
+  .text {
+
+    padding: 104px 304px 80px 40px;
+    width: 65%;
+  }
+  .text h1 {
+    color: #444;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 40px 0 0;
+  }
+  .text p {
+    color: #444;
+    font-size: 16px;
+    margin: 24px 40px 24px 0;
+  }
+  
+  /*STRIPE*/
+  .stripe {
+    justify-content: flex-end;
+    width: 35%;
+  }
+
+  .text_slide{    
+    margin-top: 350px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+   .stripe .stripe__item {
+    width: 2.5rem;
+    height: 200%;
+  }
+  .stripe .stripe__item:nth-of-type(1) {
+    background: #edd7aa;
+    
+  }
+  .stripe .stripe__item:nth-of-type(2) {
+    background: #f2cc45;
+  }
+  .stripe .stripe__item:nth-of-type(3) {
+    background: #eb7d3e;
+  }
+  .stripe .stripe__item:nth-of-type(4) {
+    background: #e15046;
+  }
+  
+
+  
+  /*FISH*/
+  .fish {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    height: 600px;
+  }
+  .fish .fish__item {
+    background: url("https://cdn.pixabay.com/photo/2015/06/06/19/03/goldfish-799744_1280.png") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .fish .fish__item-sm {
+    width: 80px;
+    height: 80px;
+    transform: scaleX(-1) rotate(40deg);
+  }
+  .fish .fish__item-sm:nth-of-type(1) {
+    width: 100px;
+    height: 100px;
+    transform: scaleX(-1) rotate(8deg);
+    margin: 0 -32px;
+  }
+  .fish .fish__item-sm:nth-of-type(3) {
+    margin: -88px 32px 0;
+  }
+  .fish .fish__item-sm:nth-of-type(5) {
+    margin: -24px -64px 0;
+    transform: scaleX(-1) rotate(56deg);
+    height: 88px;
+    width: 88px;
+  }
+  .fish .fish__item-md {
+    width: 140px;
+    height: 140px;
+    margin: 32px;
+    transform: scaleX(-1) rotate(16deg);
+  }
+  .fish .fish__item-lg {
+    width: 240px;
+    height: 240px;
+    margin: 0 80px;
+  }
